@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye STEM Yarışması - Ana Sayfa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0b0d17;
+            --card-bg: #161b22;
+            --accent: #00f2ff;
+            --gold: #ffd700;
+            --text: #e6edf3;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 50% 50%, #1a1f35 0%, #0b0d17 100%);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .header-box {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #b8860b, #ffd700, #ffface, #ffd700, #b8860b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            letter-spacing: 2px;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 242, 255, 0.2);
+        }
+
+        .card i {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        .card::after {
+            content: "SONUÇLARI GÖR";
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover::after {
+            opacity: 1;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            opacity: 0.4;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-box">
+        <h1>TÜRKİYE STEM YARIŞMASI</h1>
+        <div class="subtitle">RESMİ SKOR PORTALI</div>
+    </div>
+
+    <div class="portal-grid">
+        <!-- Çizgi İzleyen Kartı -->
+        <a href="https://serkantutuncu9.github.io/cizgiizleyen/" class="card">
+            <i class="fas fa-route"></i>
+            <h2>Çizgi İzleyen</h2>
+            <p>Hız ve Hassasiyet Yarışması</p>
+        </a>
+
+        <!-- Balonlu Araba Kartı -->
+        <a href="https://serkantutuncu9.github.io/balonluaraba/" class="card">
+            <i class="fas fa-car-side"></i>
+            <h2>Balonlu Araba</h2>
+            <p>Mesafe ve Mühendislik Yarışması</p>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 ERA KOLEJİ ETKİNLİK YÖNETİM SİSTEMİ
+    </footer>
+</div>
+
+</body>
+</html>
