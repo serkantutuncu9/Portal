@@ -24,11 +24,12 @@
             align-items: center;
             min-height: 100vh;
             background-image: radial-gradient(circle at 50% 50%, #1a1f35 0%, #0b0d17 100%);
+            padding: 40px 0;
         }
 
         .container {
             text-align: center;
-            max-width: 900px;
+            max-width: 1000px;
             padding: 20px;
         }
 
@@ -55,8 +56,8 @@
 
         .portal-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-top: 40px;
         }
 
@@ -64,7 +65,7 @@
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            padding: 40px;
+            padding: 35px 20px;
             text-decoration: none;
             color: var(--text);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -82,26 +83,28 @@
         }
 
         .card i {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: 3rem;
+            margin-bottom: 15px;
             color: var(--gold);
         }
 
         .card h2 {
             margin: 10px 0;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
         }
 
         .card p {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.6;
+            margin-bottom: 10px;
         }
 
         .card::after {
             content: "SONUÇLARI GÖR";
             position: absolute;
-            bottom: 20px;
-            font-size: 0.7rem;
+            bottom: 15px;
+            font-size: 0.65rem;
             letter-spacing: 2px;
             color: var(--accent);
             opacity: 0;
@@ -129,18 +132,39 @@
     </div>
 
     <div class="portal-grid">
-        <!-- Çizgi İzleyen Kartı -->
+        <!-- Çizgi İzleyen -->
         <a href="https://serkantutuncu9.github.io/cizgiizleyen/" class="card">
             <i class="fas fa-route"></i>
             <h2>Çizgi İzleyen</h2>
             <p>Hız ve Hassasiyet Yarışması</p>
         </a>
 
-        <!-- Balonlu Araba Kartı -->
+        <!-- Mini Sumo -->
+        <a href="https://serkantutuncu9.github.io/minisumo/" class="card">
+            <i class="fas fa-robot"></i>
+            <h2>Mini Sumo</h2>
+            <p>Güç ve Strateji Yarışması</p>
+        </a>
+
+        <!-- Kağıt Kule -->
+        <a href="https://serkantutuncu9.github.io/kagitkule/" class="card">
+            <i class="fas fa-monument"></i>
+            <h2>Kağıt Kule</h2>
+            <p>Denge ve Mühendislik Yarışması</p>
+        </a>
+
+        <!-- Kağıt Roket -->
+        <a href="https://serkantutuncu9.github.io/kagitroket/" class="card">
+            <i class="fas fa-paper-plane"></i>
+            <h2>Kağıt Roket</h2>
+            <p>Menzil ve Aerodinamik Yarışması</p>
+        </a>
+
+        <!-- Balonlu Araba -->
         <a href="https://serkantutuncu9.github.io/balonluaraba/" class="card">
             <i class="fas fa-car-side"></i>
             <h2>Balonlu Araba</h2>
-            <p>Mesafe ve Mühendislik Yarışması</p>
+            <p>Mesafe ve Mekanik Yarışması</p>
         </a>
     </div>
 
